@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iansui&family=Tangerine:wght@400;700&display=swap");
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logo {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+.logo .logo-other-name {
+  font-family: "Iansui", cursive;
+  font-size: 10px;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.page-icon {
+  width: 1em;
+  height: 1em;
+  border-radius: 12%;
+  box-shadow: 0 0 0.06em #a0a0a0;
+  background: #000;
+}
+
+.blockquote {
+  font-size: 0.8em;
+}
+
+.blockquote-footer {
+  font-size: 0.5em;
+}
+
+@media (max-width: 767.98px) {
+  .left,
+  .right,
+  #recentpages {
+    width: 100%;
+  }
+  .aside {
+    display: none;
+  }
+}
