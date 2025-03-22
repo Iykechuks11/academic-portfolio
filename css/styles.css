@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Iansui&family=Tangerine:wght@400;700&display=swap");
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
 a {
   text-decoration: none;
 }
@@ -26,11 +37,10 @@ h2 {
 }
 
 .page-icon {
-  width: 1em;
-  height: 1em;
+  width: 1.4em;
+  height: 1.4em;
   border-radius: 12%;
   box-shadow: 0 0 0.06em #a0a0a0;
-  background: #000;
 }
 
 .blockquote {
@@ -46,8 +56,5 @@ h2 {
   .right,
   #recentpages {
     width: 100%;
-  }
-  .aside {
-    display: none;
   }
 }

@@ -8,9 +8,9 @@
       rel="shortcut icon"
       href="assets/images/John.ico"
       type="image/x-icon" />
-    <link rel="stylesheet" href="../css/fontawesome.css" />
-    <link rel="stylesheet" href="../css/bootstrap.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../../css/fontawesome.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
   </head>
   <body class="bg-gradient">
     <header>
@@ -34,22 +34,21 @@
           <div class="collapse navbar-collapse" id="navbarNav1">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a href="/pages/recent.html" class="nav-link active">Recent</a>
-              </li>
-              <li class="nav-item">
                 <a href="#about" class="nav-link">Math</a>
               </li>
               <li class="nav-item">
                 <a href="#about" class="nav-link">Programming/LeetCode</a>
               </li>
               <li class="nav-item">
-                <a href="#about" class="nav-link">Writing</a>
+                <a href="../nav/writing.html" class="nav-link">Writing</a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">Contact/About</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Github</a>
+                <a href="https://github.com/Iykechuks11" class="nav-link"
+                  >Github</a
+                >
               </li>
             </ul>
           </div>
@@ -57,10 +56,12 @@
       </nav>
     </header>
 
-    <div class="container vert-main">
+    <section class="container vert-main">
       <figure>
         <blockquote class="blockquote">
-          <p>Seek ye first the kingdom of God.</p>
+          <p>
+            For as long as you keep lying down, you will keep feeling sleepy.
+          </p>
         </blockquote>
         <figcaption class="blockquote-footer">
           Someone famous
@@ -71,35 +72,45 @@
         </figcaption>
       </figure>
 
-      <div class="row horz-main">
-        <div
-          class="d-flex justify-content-between shadow-lg p-3 mb-5 bg-white rounded">
-          <article class="w-75 article">
-            <h2 class="h2 text-center">Recent pages</h2>
-            <table id="recentpages" class="table table-borderless">
-              <thead>
-                <!-- <tr>
-                  <th scope="col"></th>
-                  <th scope="col">Project</th>
-                  <th scope="col">Last Updated</th>
-                </tr> -->
-              </thead>
-              <tbody class="table-group-divider">
-                <tr>
-                  <td class="lead">March 2025</td>
-                </tr>
-                <tr>
-                  <th scope="row"><img src="" alt="" class="page-icon" /></th>
-                  <td>Calculator</td>
-                  <td class="last-updated">16-03-2025</td>
-                </tr>
-              </tbody>
-            </table>
+      <div class="col-12 shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="d-flex flex-column flex-md-row p-3 mb-5 bg-white rounded">
+          <article class="col-lg-8 col-md-12 article">
+            <h2 class="h2 text-center">
+              <img src="../../../assets/images/movie.png" alt="movie_icon" />
+              Flixx App
+            </h2>
+            <div class="row">
+              <h3 class="h4">Description</h3>
+              <p>
+                Flixx is a movie app that allows users to search for movies,
+                view movie details, and watch trailers. It is built JavaScript
+                and the
+                <a href="https://www.themoviedb.org/"
+                  >Movie Database API (TMDB)</a
+                >.
+              </p>
+
+              <p>
+                The source <em>JavaScript</em> code are available on this
+                <a href="https://github.com/Iykechuks11/flixx-app">repo</a>.
+              </p>
+
+              <p>Tools: JavaScript</p>
+            </div>
           </article>
-          <aside class="w-25 aside">aaaa</aside>
+
+          <aside class="col-lg-4 col-md-12 text-center aside bg-light">
+            <div>
+              <h2 class="h3">Recent</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+                perspiciatis.
+              </p>
+            </div>
+          </aside>
         </div>
       </div>
-    </div>
+    </section>
 
     <footer class="container">
       <div class="d-flex justify-content-between">
@@ -126,7 +137,7 @@
       </div>
     </footer>
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
