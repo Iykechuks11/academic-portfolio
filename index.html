@@ -3,52 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project John</title>
+    <!-- Consider a more specific title reflecting your academic focus -->
+    <title>C. I. John - Academic Profile & Projects</title>
+
+    <!-- Google Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iansui&family=Noto+Sans+JP:wght@400;700&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Favicon -->
     <link
       rel="shortcut icon"
       href="assets/images/John.ico"
       type="image/x-icon" />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/fontawesome.css" />
+    <!-- Assuming you have this locally -->
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Assuming you have this locally -->
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- Your custom styles -->
   </head>
   <body class="bg-gradient">
+    <!-- bg-gradient is custom, defined in styles.css -->
     <header>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-          <a href="/" class="navbar-brand logo"
-            >C. I. John
-            <span class="logo-other-name text-secondary"
-              >(Џон | 约翰 | Yohanes)</span
-            ></a
-          >
+          <a href="/" class="navbar-brand logo">
+            C. I. John
+            <span class="logo-other-name text-secondary">
+              (Џон | 约翰 | Yohanes)
+            </span>
+          </a>
 
           <button
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
-            class="navbar-toggler">
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
+              <!-- TODO: Update hrefs to point to actual pages or section IDs -->
               <li class="nav-item">
-                <a href="#about" class="nav-link">Math</a>
+                <a href="pages/nav/research.html" class="nav-link">Research</a>
+                <!-- Example: Renamed & Linked -->
               </li>
               <li class="nav-item">
-                <a href="#about" class="nav-link">Programming/LeetCode</a>
+                <a href="pages/nav/projects.html" class="nav-link">Projects</a>
+                <!-- Example: Renamed & Linked -->
+              </li>
+              <li class="nav-item">
+                <a href="pages/nav/publications.html" class="nav-link"
+                  >Publications</a
+                >
+                <!-- Example: Added -->
               </li>
               <li class="nav-item">
                 <a href="pages/nav/writing.html" class="nav-link">Writing</a>
+                <!-- Keep if relevant -->
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Contact/About</a>
+                <!-- Points to anchor before About section -->
+                <a href="about.html" class="nav-link">Contact/About</a>
               </li>
               <li class="nav-item">
-                <a href="https://github.com/Iykechuks11" class="nav-link"
-                  >Github</a
-                >
+                <a href="assets/cv_cijohn.pdf" class="nav-link">CV</a>
+                <!-- Example: Added -->
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://github.com/Iykechuks11"
+                  class="nav-link"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> Github
+                  <!-- Added icon -->
+                </a>
               </li>
             </ul>
           </div>
@@ -56,242 +95,276 @@
       </nav>
     </header>
 
-    <section class="container vert-main">
-      <figure>
-        <blockquote class="blockquote">
-          <p>
-            For as long as you keep lying down, you will keep feeling sleepy.
-          </p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          Someone famous
-          <a
-            href="https://www.biblegateway.com/passage/?search=Matthew%206%3A33&version=NLT"
-            ><cite title="Source Title">Source Title</cite></a
-          >
-        </figcaption>
-      </figure>
+    <main class="container py-4">
+      <!-- Added padding -->
+      <section class="mb-4">
+        <!-- Added margin-bottom -->
+        <figure>
+          <blockquote class="blockquote">
+            <!-- TODO: Consider a quote more relevant to your academic field or keep if personal -->
+            <p>
+              "Strive first for the kingdom of God and His righteousness, and
+              all these things will be added unto you." (Paraphrased)
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Matthew 6:33
+            <a
+              href="https://www.biblegateway.com/passage/?search=Matthew%206%3A33&version=NLT"
+              target="_blank"
+              rel="noopener noreferrer">
+              <cite title="Matthew 6:33 NLT">(NLT Version)</cite>
+            </a>
+          </figcaption>
+        </figure>
+      </section>
 
-      <div class="horz-main row">
-        <article>
+      <!-- Main content area using Bootstrap Grid -->
+      <div id="main-content" class="row shadow-lg p-4 mb-5 bg-white rounded">
+        <!-- Left Column -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <!-- Added bottom margin for small screens -->
+          <section id="recent-updates" class="mb-4">
+            <h2>Recent Updates</h2>
+            <table
+              id="recentpages"
+              class="table table-borderless table-hover caption-top">
+              <!-- Removed empty thead -->
+              <!-- Use caption for table title instead of relying solely on H2 -->
+              <caption>
+                List of recent page updates
+              </caption>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="pages/nav/projects.html">
+                      <i
+                        class="fas fa-lock project-icon text-success page-icon text-center"></i>
+                      <span>HTTPS with C</span>
+                      <!-- Example: More descriptive -->
+                    </a>
+                  </td>
+                  <td class="text-end">
+                    <!-- Align date right -->
+                    <!-- TODO: Use ACTUAL update dates -->
+                    <time datetime="2025-07-12" title="2025-04-22"></time>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="pages/nav/projects.html">
+                      <img
+                        src="assets/images/medical_information.png"
+                        alt="tracalories"
+                        class="page-icon" />
+                      <span>Tracalories Project</span>
+                      <!-- Example: More descriptive -->
+                    </a>
+                  </td>
+                  <td class="text-end">
+                    <!-- Align date right -->
+                    <!-- TODO: Use ACTUAL update dates -->
+                    <time datetime="2025-07-12" title="2025-03-22"></time>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="pages/nav/projects.html">
+                      <img
+                        src="assets/images/movie.png"
+                        alt=""
+                        class="page-icon" />
+                      <span>Flixx App (JavaScript)</span>
+                    </a>
+                  </td>
+                  <td class="text-end">
+                    <time datetime="2024-03-12" title="2024-07-12"></time>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="pages/nav/writing.html">
+                      <img
+                        src="assets/images/cognition.png"
+                        alt=""
+                        class="page-icon" />
+                      <span>Draft: Master's Thesis Ideas</span>
+                    </a>
+                  </td>
+                  <td class="text-end">
+                    <time datetime="2025-03-23" title="2025-03-23"></time>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <!-- TODO: Update href to a page listing all updates -->
+                    <a href="updates.html">(more recent updates...)</a>
+                  </td>
+                </tr>
+                <!-- Removed second tbody, merged content above -->
+                <!-- Removed commented out AES entry -->
+              </tbody>
+            </table>
+          </section>
+
+          <section id="contact-info">
+            <h2>Contact</h2>
+            <p>
+              <a href="mailto:cikechukwujohn@gmail.com">
+                <i class="fa-solid fa-envelope"></i> cikechukwujohn [at]
+                gmail.com
+              </a>
+            </p>
+            <p>
+              <a href="http://www.youtube.com/@DiscreteTechScholar">
+                <i class="fa-brands fa-youtube text-danger"></i> Discrete Tech
+                Scholar
+              </a>
+            </p>
+            <!-- Optional: Add other contact methods like LinkedIn profile link here -->
+          </section>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <!-- Anchor point for the Contact/About nav link -->
           <div
-            id="maintable"
-            class="d-flex flex-column flex-md-row justify-content-between shadow-lg p-3 mb-5 bg-white rounded">
-            <div class="left">
-              <h2>Recent updates</h2>
-              <table
-                id="recentpages"
-                class="table table-borderless table-hover">
-                <thead style="display: none"></thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <a href="pages/projects/trajectories.html">
-                        <img
-                          src="assets/images/medical_information.png"
-                          alt=""
-                          class="page-icon" />
-                        <span>Tracalories</span>
-                      </a>
-                    </td>
-                    <td>
-                      <time datetime="2025-07-12" title="2025-03-22"></time>
-                    </td>
-                  </tr>
+            id="contact-about-anchor"
+            style="position: relative; top: -80px"></div>
+          <!-- Adjust offset as needed -->
 
-                  <tr>
-                    <td>
-                      <a href="pages/projects/flixx.html">
-                        <img
-                          src="assets/images/movie.png"
-                          alt=""
-                          class="page-icon" />
-                        <span>Flixx (JavaScript)</span>
-                      </a>
-                    </td>
-                    <td>
-                      <time datetime="2024-03-12" title="2024-07-12"></time>
-                    </td>
-                  </tr>
+          <section id="about-section" class="mb-4">
+            <h2>About Me</h2>
+            <!-- Applied profile-picture class -->
+            <img
+              src="assets/images/John.jpeg"
+              alt="John"
+              class="profile-picture mb-3 float-md-end ms-md-3" />
+            <!-- Floated on medium+ screens -->
 
-                  <tr>
-                    <td colspan="2">
-                      <a href="">(more recent pages)</a>
-                    </td>
-                  </tr>
-                </tbody>
-                <tbody>
-                  <tr>
-                    <td>
-                      <a href="pages/nav/writing.html">
-                        <img
-                          src="assets/images/cognition.png"
-                          alt=""
-                          class="page-icon" />
-                        <span>Masters thesis idea</span>
-                      </a>
-                    </td>
-                    <td>
-                      <time datetime="2025-03-23" title="2025-03-23"></time>
-                    </td>
-                  </tr>
-                  <!-- <tr>
-                    <td>
-                      <a href="">
-                        <img src="" alt="" class="page-icon" />
-                        <span>AES</span>
-                      </a>
-                    </td>
-                    <td>
-                      <time datetime="2025-03-16" title="2025-03-16"></time>
-                    </td>
-                  </tr> -->
-                  <tr>
-                    <td colspan="2">
-                      <a href="/">(list of all pages)</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <h2>Contact</h2>
-              <p>
-                <a href="mailto:cikechukwujohn@gmail.com"
-                  ><i class="fa-solid fa-envelope"> </i> cikechukwujohn at
-                  gmail.com</a
-                >
-              </p>
-            </div>
-
-            <div class="right">
-              <h2>About</h2>
+            <p>
+              <strong>Guten Tag!</strong> I'm John, a cybersecurity software
+              engineer based on Planet
+              <!-- Applied inline-icon class -->
               <img
-                src="assets/images/John.jpeg"
-                alt="John"
-                style="width: 100px; width: 100px" />
-              <p>
-                <strong>Guten Tag!</strong> I'm John, a cybersecurity software
-                engineer who lives on
-                <img
-                  src="assets/images/earth-cycles.png"
-                  alt=""
-                  style="width: 20px; height: 20px" />. I think I like
-                mathematics and computer science. I have also been reading about
-                information security, particularly cryptography.
-              </p>
-              <p>
-                On this website, you'll find a collection of my programming
-                projects, ideas, and insights into the world of cybersecurity
-                and technology.
-              </p>
-              <p>
-                Moreso, I understand and can communicate in English, German
-                (wenig), and Macedonian (малку), and I’m currently working on
-                improving my Turkish!!
-              </p>
-              <p>
-                Feel free to hack the website, it's just text, style and basic
-                JS. Nothing special.
-              </p>
-              <p><a href="/">(more about me...)</a></p>
+                src="assets/images/earth-cycles.png"
+                alt="Earth"
+                class="inline-icon" />. I have strong interests in mathematics
+              and computer science, particularly information security and
+              cryptography.
+            </p>
+            <p>
+              This website serves as a portfolio for my programming projects,
+              research explorations, and insights related to cybersecurity and
+              technology.
+            </p>
+            <p>
+              I communicate fluently in English and have a working knowledge of
+              German (B1) and Macedonian (A2). I’m currently enhancing my
+              Turkish language skills.
+            </p>
+            <!-- Removed the "Feel free to hack..." line for a more professional tone -->
+            <p>
+              <!-- TODO: Update href to a dedicated About page -->
+              <a href="about.html">(Read more about me...)</a>
+            </p>
+            <div style="clear: both"></div>
+            <!-- Clear float for content below -->
+          </section>
 
-              <section id="categories">
-                <h2>Categories</h2>
+          <section id="categories">
+            <h2>Interests & Topics</h2>
+            <!-- Renamed from Categories -->
+            <!-- TODO: Curate this list for academic focus or move less relevant items to a blog/notes page -->
+            <!-- TODO: Update all hrefs to point to actual category/tag pages -->
+            <ul>
+              <li><a href="topics.html">Cryptography</a></li>
+              <li><a href="topics.html">Mathematics</a></li>
+              <li>
+                <a href="topics.html">Programming</a>
                 <ul>
-                  <li>
-                    <a href="/">Faith</a>
-                  </li>
-                  <li>
-                    <a href="/">My Mentors and Coaches</a>
-                  </li>
-                  <li>
-                    <a href="/">Math</a>
-                  </li>
-                  <li>
-                    <a href="/">Programming</a>
-                  </li>
-                  <li>
-                    <a href="/">Writing</a>
-                  </li>
-                  <li>
-                    <a href="/">Art</a>
-                  </li>
-                  <li>
-                    <a href="/">Music</a>
-                  </li>
-                  <li>
-                    <a href="/">Cryptography</a>
-                  </li>
-                  <li>
-                    <a href="/">Finance</a>
-                  </li>
-                  <li>
-                    <a href="/">Startup</a>
-                  </li>
-                  <li>
-                    <a href="/">Languages</a>
-                  </li>
-                  <li>
-                    <a href="/">Rust</a>
-                  </li>
-                  <li>
-                    <a href="/">Python</a>
-                  </li>
-                  <li>
-                    <a href="/">C</a>
-                  </li>
-                  <li>
-                    <a href="/">C++</a>
-                  </li>
-                  <li>
-                    <a href="/">Computer Architecture</a>
-                  </li>
-                  <li>
-                    <a href="/">Artificial Intelligence</a>
-                  </li>
-                  <li>
-                    <a href="/">Rejections</a>
-                  </li>
-                  <li>
-                    <a href="/">Failed Projects</a>
-                  </li>
-                  <li>
-                    <a href="/">Mistakes</a>
-                  </li>
+                  <!-- Example sub-list -->
+                  <li><a href="topics.html">Rust</a></li>
+                  <li><a href="topics.html">C / C++</a></li>
+                  <li><a href="topics.html">Python</a></li>
                 </ul>
-              </section>
-            </div>
-          </div>
-        </article>
+              </li>
+              <li><a href="topics.html">Information Security</a></li>
+              <li>
+                <a href="topics.html">Computer Architecture</a>
+              </li>
+              <li><a href="topics.html">Languages</a></li>
+              <!-- Consider moving personal/less academic topics -->
+              <!--
+                      <li><a href="/blog/faith.html">Faith</a></li>
+                      <li><a href="/blog/mentors.html">Mentors & Coaches</a></li>
+                      <li><a href="/blog/art.html">Art</a></li>
+                      <li><a href="/blog/music.html">Music</a></li>
+                      <li><a href="/blog/finance.html">Finance</a></li>
+                      <li><a href="/blog/startups.html">Startup Journey</a></li>
+                      <li><a href="/blog/ai.html">Artificial Intelligence</a></li>
+                      <li><a href="/blog/failures.html">Learnings (Rejections, Mistakes)</a></li>
+                      -->
+            </ul>
+          </section>
+        </div>
       </div>
-    </section>
+    </main>
 
-    <footer class="container">
-      <div class="d-flex justify-content-between">
-        <p>
-          <a href="https://twitter.com/Champion_Chukwu">
+    <footer class="container mt-5 py-3 border-top">
+      <!-- Added top border and padding -->
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+        <div class="mb-2 mb-sm-0">
+          <!-- Social links -->
+          <!-- Added target="_blank" and rel="noopener noreferrer" for external links -->
+          <a
+            href="https://twitter.com/Champion_Chukwu"
+            class="text-decoration-none me-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter">
             <i class="fa-brands fa-x-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/chukwuikechukwujohn/">
+          <a
+            href="https://www.instagram.com/chukwuikechukwujohn/"
+            class="text-decoration-none me-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram">
             <i class="fa-brands fa-instagram"></i>
           </a>
           <a
-            href="https://www.linkedin.com/in/chukwu-john-ikechukwu-94b184156/">
+            href="https://www.linkedin.com/in/chukwu-john-ikechukwu-94b184156/"
+            class="text-decoration-none me-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn">
             <i class="fa-brands fa-linkedin"></i>
           </a>
-          <i class="fa-brands fa-square-facebook"></i>
-        </p>
-        <p>
-          <strong>Copyright</strong>
-          <a href="">
-            <i class="fas fa-copyright"></i>
-            <span>2025</span>
-          </a>
-        </p>
+          <!-- Removed Facebook icon as requested -->
+        </div>
+        <div>
+          <!-- Copyright -->
+          <!-- Removed the unnecessary link wrapping -->
+          <small class="text-muted">
+            <!-- Use small tag for less emphasis -->
+            Copyright <i class="fas fa-copyright"></i>
+            <span id="copyright-year">2024</span> C. I. John. All rights
+            reserved.
+          </small>
+        </div>
       </div>
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Assuming you have this locally -->
     <script src="js/script.js"></script>
+    <!-- Your custom JS -->
+    <!-- Optional: Script to update copyright year automatically -->
+    <script>
+      document.getElementById('copyright-year').textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>

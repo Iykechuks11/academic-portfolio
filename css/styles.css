@@ -1,60 +1,177 @@
 @import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Iansui&family=Tangerine:wght@400;700&display=swap");
+/* Font Imports - Ensure these are loaded (e.g., via HTML link or here) */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Iansui&family=Tangerine:wght@400;700&display=swap'); */
 body {
+  /* Use the font loaded via HTML link */
   font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #333;
-  background: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+  /* Removed height: 100vh; */
+  /* Keep custom background if desired */
+  /* background: #f4f4f4; */
+}
+
+/* Example custom gradient background */
+body.bg-gradient {
+  background: linear-gradient(to bottom right, #eef2f3, #dbe3e5);
 }
 
 a {
   text-decoration: none;
+  /* Consider adding a default link color */
+  /* color: #0d6efd; */
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.5rem; /* Slightly larger H2 using rem units */
   font-weight: 700;
+  margin-bottom: 1rem; /* Add some space below headings */
+  border-bottom: 1px solid #eee; /* Subtle underline for headings */
+  padding-bottom: 0.5rem;
 }
 
+/* Logo Styling */
 .logo {
   font-family: "Tangerine", cursive;
-  font-weight: 400;
+  font-weight: 400; /* Tangerine often looks better at 400 */
   font-style: normal;
-  font-size: 25px;
+  font-size: 1.8rem; /* Slightly larger logo font */
 }
+
+/* Correctly un-nested selector */
 .logo .logo-other-name {
-  font-family: "Iansui", cursive;
-  font-size: 10px;
+  font-family: "Iansui", cursive; /* Use 'Iansui' font */
+  font-size: 0.8rem; /* Slightly larger for readability */
+  font-weight: 400; /* Ensure correct weight */
 }
 
-.left,
-.right {
-  width: 50%;
-}
-
+/* --- Layout classes .left, .right, and media query REMOVED --- */
+/* --- Bootstrap grid columns handle the layout now --- */
+/* Icon in recent updates table */
 .page-icon {
   width: 1.4em;
   height: 1.4em;
-  border-radius: 12%;
-  box-shadow: 0 0 0.06em #494949;
+  border-radius: 12%; /* Keep rounded corners */
+  box-shadow: 0 0 0.06em #6c757d; /* Use Bootstrap secondary color */
+  vertical-align: middle; /* Align icon better with text */
+  margin-right: 0.5em; /* Add space between icon and text */
 }
 
+/* Blockquote styling */
 .blockquote {
-  font-size: 0.8em;
+  font-size: 1rem; /* Adjusted size for better readability */
+  font-style: italic;
+  margin-bottom: 0.5rem; /* Space before footer */
+  border-left: 3px solid #adb5bd; /* Add a visual quote indicator */
+  padding-left: 1rem;
 }
 
 .blockquote-footer {
-  font-size: 0.5em;
+  font-size: 0.9rem; /* Increased size for readability */
+  color: #6c757d; /* Use Bootstrap secondary text color */
 }
 
-@media (max-width: 767.98px) {
-  .left,
-  .right,
-  #recentpages {
-    width: 100%;
-  }
+/* Replaces inline style for profile picture */
+.profile-picture {
+  width: 120px; /* Increased size slightly */
+  height: 120px;
+  border-radius: 50%; /* Make it round */
+  object-fit: cover; /* Ensure image covers space without distortion */
+  border: 3px solid #fff; /* Optional white border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  /* Floating is handled by Bootstrap float-md-end class in HTML */
 }
+
+/* Replaces inline style for small icons in text */
+.inline-icon {
+  height: 1.1em; /* Scales with text */
+  width: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align nicely with text */
+  margin: 0 0.1em; /* Tiny space around icon */
+  flex-shrink: 0; /* Prevent shrinking in flex contexts */
+}
+
+/* Styling for the Categories/Interests list */
+#categories ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; /* Remove default bottom margin if needed */
+}
+
+/* Style top-level list items */
+#categories > ul > li {
+  margin-bottom: 0.75rem;
+}
+
+/* Style nested lists (like programming languages) */
+#categories ul ul {
+  list-style: circle; /* Use circles for sub-items */
+  padding-left: 1.5rem; /* Indent sub-list */
+  margin-top: 0.25rem; /* Space before sub-list */
+}
+
+#categories ul ul li {
+  margin-bottom: 0.25rem; /* Space between sub-items */
+}
+
+/* Footer Social Icons */
+footer .fa-brands {
+  font-size: 1.4rem; /* Make icons slightly larger */
+  color: #6c757d; /* Use muted color */
+  transition: color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+footer .fa-brands:hover {
+  color: #343a40; /* Darken on hover */
+}
+
+/* Ensure navbar collapse works smoothly */
+.navbar-collapse {
+  transition: height 0.35s ease;
+}
+
+/* Styles for Writing Page Entries */
+.writing-entry.card {
+  border: none; /* Remove default card border if using shadow */
+  /* Optional: Add a subtle top border instead of full border */
+  /* border-top: 1px solid #eee; */
+}
+
+.writing-entry .card-title {
+  font-size: 1.25rem; /* Adjust title size */
+  font-weight: 600;
+}
+
+.writing-entry .card-subtitle {
+  font-size: 1rem; /* Adjust subtitle size */
+}
+
+.writing-entry .card-text {
+  color: #555; /* Slightly lighter text for description */
+}
+
+.writing-entry .card-text small {
+  font-size: 0.85em;
+}
+
+/* Aside styling */
+aside .fa-book-open {
+  /* Style for the book icon */
+  font-size: 0.9em;
+}
+
+aside ul li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+/* Sticky aside requires the parent to allow overflow,
+   but Bootstrap's row/col usually handles this okay.
+   Only add if you experience issues. */
+/*
+main .row {
+    overflow: visible;
+}
+*/

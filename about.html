@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About & Contact - C. I. John</title>
+    <!-- Page specific title -->
+
+    <!-- Google Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iansui&family=Noto+Sans+JP:wght@400;700&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/John.ico"
+      type="image/x-icon" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Add specific styles if needed -->
+    <style>
+      /* Ensure profile picture alignment works well */
+      @media (min-width: 768px) {
+        .about-profile-pic {
+          max-width: 180px; /* Adjust size as needed */
+        }
+      }
+      #contact-info i {
+        /* Ensure icons have spacing */
+        margin-right: 0.5em;
+        width: 1.2em; /* Align icons better */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient">
+    <!-- ===== Consistent Header Structure ===== -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <a href="/" class="navbar-brand logo">
+            C. I. John
+            <span class="logo-other-name text-secondary">
+              (Џон | 约翰 | Yohanes)
+            </span>
+          </a>
+          <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="pages/nav/research.html" class="nav-link">Research</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/nav/projects.html" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/nav/publications.html" class="nav-link"
+                  >Publications</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="pages/nav/writing.html" class="nav-link">Writing</a>
+              </li>
+              <li class="nav-item">
+                <!-- Add active class to this page's link -->
+                <a href="about.html" class="nav-link active" aria-current="page"
+                  >About/Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="assets/cv_cijohn.pdf"
+                  class="nav-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CV</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://github.com/Iykechuks11"
+                  class="nav-link"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i> Github
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ===== End Header ===== -->
+
+    <!-- Main Content Area for About/Contact -->
+    <main class="container py-4">
+      <h1 class="mb-4">About Me & Contact</h1>
+
+      <div class="row g-5">
+        <!-- Added more gutter spacing -->
+
+        <!-- About Me Column -->
+        <div class="col-lg-8">
+          <section id="about-me">
+            <!-- Using float utility for image placement next to text on larger screens -->
+            <img
+              src="assets/images/John.jpeg"
+              alt="Portrait of C. I. John"
+              class="img-thumbnail rounded-circle float-md-end ms-md-4 mb-3 about-profile-pic" />
+
+            <p class="lead">
+              <strong>Guten Tag! Zdravo! Merhaba! Hello!</strong> I'm John, a
+              cybersecurity software engineer with a passion for exploring the
+              intricate connections between mathematics, computer science, and
+              information security.
+            </p>
+            <p>
+              Originally from Nigeria, I currently reside in North Macedonia
+              while pursuing my MSc in Computer Science/Cybersecurity. My
+              academic journey is driven by a curiosity to understand and build
+              secure, reliable systems.
+            </p>
+            <p>
+              Professionally, I focus on 1-2 key areas like: secure software
+              development, cryptographic implementations, vulnerability
+              analysis. I enjoy tackling complex problems and translating
+              theoretical concepts into practical solutions. You can explore
+              some of my work in the
+              <a href="pages/nav/projects.html">Projects</a> and
+              <a href="pages/nav/publications.html">Publications</a> sections.
+            </p>
+            <hr class="my-4" />
+
+            <h2 class="h4 mb-3">Interests & Skills</h2>
+            <p>
+              Beyond my core focus on cybersecurity and cryptography, I have a
+              keen interest in:
+            </p>
+            <ul>
+              <li>Low-level systems programming (C, C++, Rust)</li>
+              <li>Algorithm design and analysis</li>
+              <li>Theoretical computer science concepts</li>
+              <li>
+                Web development (JavaScript, HTML, CSS - as seen on this site!)
+              </li>
+              <li>
+                Reading broadly across non-fiction (science, philosophy,
+                history) and fiction.
+              </li>
+              <li>
+                Language learning: I communicate fluently in English, and have
+                working knowledge of German (B1) and Macedonian (A2). I'm
+                actively improving my Turkish.
+              </li>
+            </ul>
+            <p>
+              I believe continuous learning is crucial in the fast-evolving
+              field of technology. This website serves as a living document of
+              my journey, projects, and thoughts.
+            </p>
+            <!-- Clear float if needed, though often unnecessary with block elements below -->
+            <!-- <div style="clear: both;"></div> -->
+          </section>
+        </div>
+
+        <!-- Contact & Links Column -->
+        <div class="col-lg-4">
+          <div class="sticky-top" style="top: 20px">
+            <!-- Optional: Make this column sticky -->
+            <div class="card shadow-sm mb-4">
+              <div class="card-header">
+                <h2 class="h5 mb-0">Contact Information</h2>
+              </div>
+              <div class="card-body">
+                <section id="contact-info">
+                  <p class="mb-2">
+                    <!-- Reduced margin -->
+                    <a href="mailto:cikechukwujohn@gmail.com">
+                      <i class="fa-solid fa-envelope text-primary"></i>
+                      cikechukwujohn [at] gmail.com
+                    </a>
+                  </p>
+                  <p class="mb-2">
+                    <a
+                      href="https://www.youtube.com/@DiscreteTechScholar"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <i class="fa-brands fa-youtube text-danger"></i> Discrete
+                      Tech Scholar (YouTube)
+                    </a>
+                  </p>
+                  <p class="mb-0">
+                    <!-- Remove margin on last item -->
+                    <a
+                      href="https://www.linkedin.com/in/chukwu-john-ikechukwu-94b184156/"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <i class="fa-brands fa-linkedin text-info"></i> LinkedIn
+                      Profile
+                    </a>
+                  </p>
+                </section>
+              </div>
+            </div>
+
+            <div class="card shadow-sm">
+              <div class="card-header">
+                <h2 class="h5 mb-0">Quick Links</h2>
+              </div>
+              <div class="list-group list-group-flush">
+                <!-- Use List Group for links -->
+                <a
+                  href="assets/cv_cijohn.pdf"
+                  class="list-group-item list-group-item-action"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fas fa-file-pdf me-2"></i> Download CV
+                </a>
+                <a
+                  href="https://github.com/Iykechuks11"
+                  class="list-group-item list-group-item-action"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fa-brands fa-github me-2"></i> GitHub Profile
+                </a>
+                <a
+                  href="pages/nav/publications.html"
+                  class="list-group-item list-group-item-action">
+                  <i class="fas fa-book-journaled me-2"></i> View Publications
+                  <!-- Example icon -->
+                </a>
+                <a
+                  href="pages/nav/projects.html"
+                  class="list-group-item list-group-item-action">
+                  <i class="fas fa-laptop-code me-2"></i> View Projects
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- End sticky-top -->
+        </div>
+        <!-- End Contact Column -->
+      </div>
+      <!-- /.row -->
+    </main>
+
+    <!-- ===== Consistent Footer Structure ===== -->
+    <footer class="container mt-5 py-3 border-top">
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+        <div class="mb-2 mb-sm-0">
+          <a
+            href="https://twitter.com/Champion_Chukwu"
+            class="text-decoration-none me-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/chukwuikechukwujohn/"
+            class="text-decoration-none me-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/chukwu-john-ikechukwu-94b184156/"
+            class="text-decoration-none me-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div>
+          <small class="text-muted">
+            Copyright <i class="fas fa-copyright"></i>
+            <span id="copyright-year">2025</span> C. I. John. All rights
+            reserved.
+          </small>
+        </div>
+      </div>
+    </footer>
+    <!-- ===== End Footer ===== -->
+
+    <!-- ===== Consistent Scripts Structure ===== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      document.getElementById('copyright-year').textContent =
+        new Date().getFullYear();
+    </script>
+    <!-- ===== End Scripts ===== -->
+  </body>
+</html>
