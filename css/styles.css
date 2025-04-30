@@ -175,3 +175,21 @@ main .row {
     overflow: visible;
 }
 */
+.resource-list dt {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.resource-list dd ul {
+  margin-left: 1rem; /* Indent nested lists */
+}
+
+.resource-list dd ul li {
+  margin-bottom: 0.25rem;
+}
+
+.resource-list i {
+  /* Style icons */
+  width: 1.2em;
+  text-align: center;
+}
