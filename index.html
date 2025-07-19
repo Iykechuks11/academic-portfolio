@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Consider a more specific title reflecting your academic focus -->
-    <title>C. I. John - Academic Profile & Projects</title>
+    <title>C. I. John | Researcher in Cryptography & Security</title>
 
     <!-- Google Font Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,22 +12,17 @@
       href="https://fonts.googleapis.com/css2?family=Iansui&family=Noto+Sans+JP:wght@400;700&family=Tangerine:wght@400;700&display=swap"
       rel="stylesheet" />
 
-    <!-- Favicon -->
     <link
       rel="shortcut icon"
       href="assets/images/John.ico"
       type="image/x-icon" />
 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/fontawesome.css" />
-    <!-- Assuming you have this locally -->
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <!-- Assuming you have this locally -->
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Your custom styles -->
   </head>
+
   <body class="bg-gradient">
-    <!-- bg-gradient is custom, defined in styles.css -->
     <header>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
@@ -52,42 +46,14 @@
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <!-- TODO: Update hrefs to point to actual pages or section IDs -->
               <li class="nav-item">
-                <a href="pages/nav/research.html" class="nav-link">Research</a>
-                <!-- Example: Renamed & Linked -->
+                <a href="#research" class="nav-link">Research</a>
               </li>
               <li class="nav-item">
-                <a href="pages/nav/projects.html" class="nav-link">Projects</a>
-                <!-- Example: Renamed & Linked -->
+                <a href="#publications" class="nav-link">Publications</a>
               </li>
               <li class="nav-item">
-                <a href="pages/nav/publications.html" class="nav-link"
-                  >Publications</a
-                >
-                <!-- Example: Added -->
-              </li>
-              <li class="nav-item">
-                <a href="pages/nav/writing.html" class="nav-link">Writing</a>
-                <!-- Keep if relevant -->
-              </li>
-              <li class="nav-item">
-                <!-- Points to anchor before About section -->
-                <a href="about.html" class="nav-link">Contact/About</a>
-              </li>
-              <li class="nav-item">
-                <a href="assets/cv_cijohn.pdf" class="nav-link">CV</a>
-                <!-- Example: Added -->
-              </li>
-              <li class="nav-item">
-                <a
-                  href="https://github.com/Iykechuks11"
-                  class="nav-link"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <i class="fa-brands fa-github"></i> Github
-                  <!-- Added icon -->
-                </a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -95,220 +61,83 @@
       </nav>
     </header>
 
-    <main class="container py-4">
-      <!-- Added padding -->
-      <section class="mb-4">
-        <!-- Added margin-bottom -->
-        <figure>
-          <blockquote class="blockquote">
-            <!-- TODO: Consider a quote more relevant to your academic field or keep if personal -->
-            <p>
-              "Strive first for the kingdom of God and His righteousness, and
-              all these things will be added unto you." (Paraphrased)
-            </p>
-          </blockquote>
-          <figcaption class="blockquote-footer">
-            Matthew 6:33
-            <a
-              href="https://www.biblegateway.com/passage/?search=Matthew%206%3A33&version=NLT"
-              target="_blank"
-              rel="noopener noreferrer">
-              <cite title="Matthew 6:33 NLT">(NLT Version)</cite>
-            </a>
-          </figcaption>
-        </figure>
-      </section>
-
-      <!-- Main content area using Bootstrap Grid -->
-      <div id="main-content" class="row shadow-lg p-4 mb-5 bg-white rounded">
-        <!-- Left Column -->
-        <div class="col-md-6 mb-4 mb-md-0">
-          <!-- Added bottom margin for small screens -->
-          <section id="recent-updates" class="mb-4">
-            <h2>Recent Updates</h2>
-            <table
-              id="recentpages"
-              class="table table-borderless table-hover caption-top">
-              <!-- Removed empty thead -->
-              <!-- Use caption for table title instead of relying solely on H2 -->
-              <caption>
-                List of recent page updates
-              </caption>
-              <tbody>
-                <tr>
-                  <td>
-                    <a href="pages/nav/projects.html">
-                      <i
-                        class="fas fa-lock project-icon text-success page-icon text-center"></i>
-                      <span>HTTPS with C</span>
-                      <!-- Example: More descriptive -->
-                    </a>
-                  </td>
-                  <td class="text-end">
-                    <!-- Align date right -->
-                    <!-- TODO: Use ACTUAL update dates -->
-                    <time datetime="2025-07-12" title="2025-04-22"></time>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="pages/nav/projects.html">
-                      <img
-                        src="assets/images/medical_information.png"
-                        alt="tracalories"
-                        class="page-icon" />
-                      <span>Tracalories Project</span>
-                      <!-- Example: More descriptive -->
-                    </a>
-                  </td>
-                  <td class="text-end">
-                    <!-- Align date right -->
-                    <!-- TODO: Use ACTUAL update dates -->
-                    <time datetime="2025-07-12" title="2025-03-22"></time>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="pages/nav/projects.html">
-                      <img
-                        src="assets/images/movie.png"
-                        alt=""
-                        class="page-icon" />
-                      <span>Flixx App (JavaScript)</span>
-                    </a>
-                  </td>
-                  <td class="text-end">
-                    <time datetime="2024-03-12" title="2024-07-12"></time>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="pages/nav/writing.html">
-                      <img
-                        src="assets/images/cognition.png"
-                        alt=""
-                        class="page-icon" />
-                      <span>Draft: Master's Thesis Ideas</span>
-                    </a>
-                  </td>
-                  <td class="text-end">
-                    <time datetime="2025-03-23" title="2025-03-23"></time>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2">
-                    <!-- TODO: Update href to a page listing all updates -->
-                    <a href="portfolio.html">Check my growing PORTFOLIO page</a>
-                  </td>
-                </tr>
-                <!-- Removed second tbody, merged content above -->
-                <!-- Removed commented out AES entry -->
-              </tbody>
-            </table>
-          </section>
-
-          <section id="contact-info">
-            <h2>Contact</h2>
-            <p>
-              <a href="mailto:cikechukwujohn@gmail.com">
-                <i class="fa-solid fa-envelope"></i> cikechukwujohn [at]
-                gmail.com
-              </a>
-            </p>
-            <p>
-              <a href="http://www.youtube.com/@DiscreteTechScholar">
-                <i class="fa-brands fa-youtube text-danger"></i> Discrete Tech
-                Scholar
-              </a>
-            </p>
-            <!-- Optional: Add other contact methods like LinkedIn profile link here -->
-          </section>
+    <main class="container py-5">
+      <div class="row align-items-center mb-5">
+        <div class="col-md-3 text-center">
+          <img
+            src="assets/images/John.jpeg"
+            alt="John's photo"
+            class="profile-picture mb-3" />
         </div>
-
-        <!-- Right Column -->
-        <div class="col-md-6">
-          <!-- Anchor point for the Contact/About nav link -->
-          <div
-            id="contact-about-anchor"
-            style="position: relative; top: -80px"></div>
-          <!-- Adjust offset as needed -->
-
-          <section id="about-section" class="mb-4">
-            <h2>About Me</h2>
-            <!-- Applied profile-picture class -->
-            <img
-              src="assets/images/John.jpeg"
-              alt="John"
-              class="profile-picture mb-3 float-md-end ms-md-3" />
-            <!-- Floated on medium+ screens -->
-
-            <p>
-              <strong>Guten Tag!</strong> I'm John, a cybersecurity software
-              engineer based on Planet
-              <!-- Applied inline-icon class -->
-              <img
-                src="assets/images/earth-cycles.png"
-                alt="Earth"
-                class="inline-icon" />. I have strong interests in mathematics
-              and computer science, particularly information security and
-              cryptography.
-            </p>
-            <p>
-              This website serves as a portfolio for my programming projects,
-              research explorations, and insights related to cybersecurity and
-              technology.
-            </p>
-            <p>
-              I communicate fluently in English and have a working knowledge of
-              German (B1) and Macedonian (A2). I’m currently enhancing my
-              Turkish language skills.
-            </p>
-            <!-- Removed the "Feel free to hack..." line for a more professional tone -->
-            <p>
-              <!-- TODO: Update href to a dedicated About page -->
-              <a href="about.html">(Read more about me...)</a>
-            </p>
-            <div style="clear: both"></div>
-            <!-- Clear float for content below -->
-          </section>
-
-          <section id="categories">
-            <h2>Interests & Topics</h2>
-            <!-- Renamed from Categories -->
-            <!-- TODO: Curate this list for academic focus or move less relevant items to a blog/notes page -->
-            <!-- TODO: Update all hrefs to point to actual category/tag pages -->
-            <ul>
-              <li><a href="topics.html">Cryptography</a></li>
-              <li><a href="topics.html">Mathematics</a></li>
-              <li>
-                <a href="topics.html">Programming</a>
-                <ul>
-                  <!-- Example sub-list -->
-                  <li><a href="topics.html">Rust</a></li>
-                  <li><a href="topics.html">C / C++</a></li>
-                  <li><a href="topics.html">Python</a></li>
-                </ul>
-              </li>
-              <li><a href="topics.html">Information Security</a></li>
-              <li>
-                <a href="topics.html">Computer Architecture</a>
-              </li>
-              <li><a href="topics.html">Languages</a></li>
-              <!-- Consider moving personal/less academic topics -->
-              <!--
-                      <li><a href="/blog/faith.html">Faith</a></li>
-                      <li><a href="/blog/mentors.html">Mentors & Coaches</a></li>
-                      <li><a href="/blog/art.html">Art</a></li>
-                      <li><a href="/blog/music.html">Music</a></li>
-                      <li><a href="/blog/finance.html">Finance</a></li>
-                      <li><a href="/blog/startups.html">Startup Journey</a></li>
-                      <li><a href="/blog/ai.html">Artificial Intelligence</a></li>
-                      <li><a href="/blog/failures.html">Learnings (Rejections, Mistakes)</a></li>
-                      -->
-            </ul>
-          </section>
+        <div class="col-md-9">
+          <h1 class="fw-bold">Ikechukwu John Chukwu</h1>
+          <p class="lead mb-1">Cryptography and Cybersecurity</p>
+          <p class="text-muted">Kadir Has University, Turkey</p>
+          <p>
+            My research lies at the intersection of quantum computing,
+            lightweight cryptography, RSA, Shor's algorithm, and protocol
+            security for digital identity systems.
+          </p>
         </div>
       </div>
+
+      <section id="research" class="mb-5">
+        <h2 class="h4 fw-semibold mb-3">Research Interests</h2>
+        <ul>
+          <li>Post-quantum cryptography</li>
+          <li>Protocol security and formal verification</li>
+          <li>Lightweight cryptographic ciphers benchmarking</li>
+          <li>Quantum algorithms (Shor's, Grover's)</li>
+          <li>Cybersecurity & digital identity compliance</li>
+          <li>Zero-knowledge proofs</li>
+        </ul>
+      </section>
+
+      <section id="publications" class="mb-5">
+        <h2 class="h4 fw-semibold mb-3">Publications</h2>
+        <ol class="publication-list">
+          <li>
+            Elissa Mollakuqe, Shasivar Rexhepi, Ridvan Bunjaku, Hasan Dag,
+            <strong>Ikechukwu John Chukwu</strong>:
+            <a
+              href="https://open-research-europe.ec.europa.eu/articles/4-163"
+              target="_blank"
+              rel="noopener"
+              >Algorithm for Key Transparency with Transparent Logs</a
+            >. <em>Open Research Europe</em>, 2024.
+          </li>
+          <li>
+            Yadigar Imamverdiyev, Elshan Baghirov,
+            <strong>Ikechukwu John Chukwu</strong>:
+            <a
+              href="https://doi.org/10.15622/ia.24.1.5"
+              target="_blank"
+              rel="noopener"
+              >Detecting Obfuscated Malware Infections on Windows Using Ensemble
+              Learning Techniques</a
+            >. <em>Information & Automation</em>, 2024.
+          </li>
+        </ol>
+      </section>
+
+      <section id="contact" class="mb-5">
+        <h2 class="h4 fw-semibold mb-3">Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:cikechukwujohn@gmail.com"
+            >cikechukwujohn[at]gmail[dot]com</a
+          >
+        </p>
+        <p>
+          YouTube:
+          <a
+            href="https://www.youtube.com/@discretescientist"
+            target="_blank"
+            rel="noopener"
+            >Discrete Scientist</a
+          >
+        </p>
+      </section>
     </main>
 
     <footer class="container mt-5 py-3 border-top">
@@ -342,16 +171,12 @@
             aria-label="LinkedIn">
             <i class="fa-brands fa-linkedin"></i>
           </a>
-          <!-- Removed Facebook icon as requested -->
         </div>
         <div>
-          <!-- Copyright -->
-          <!-- Removed the unnecessary link wrapping -->
           <small class="text-muted">
             <!-- Use small tag for less emphasis -->
             Copyright <i class="fas fa-copyright"></i>
-            <span id="copyright-year">2024</span> C. I. John. All rights
-            reserved.
+            <span id="copyright-year">2024</span> C. I. John.
           </small>
         </div>
       </div>
@@ -360,8 +185,6 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Assuming you have this locally -->
     <script src="js/script.js"></script>
-    <!-- Your custom JS -->
-    <!-- Optional: Script to update copyright year automatically -->
     <script>
       document.getElementById('copyright-year').textContent =
         new Date().getFullYear();
